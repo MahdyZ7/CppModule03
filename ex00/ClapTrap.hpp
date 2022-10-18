@@ -15,5 +15,22 @@
 
 #include <iostream>
 
+class ClapTrap{
+	public:
+		ClapTrap(void);
+		ClapTrap(const std::string pname);
+		ClapTrap(ClapTrap const &src);
+		~ClapTrap();
+
+		ClapTrap &operator=(ClapTrap const &cpy);
+		 void attack(const std::string& target);
+		void takeDamage(unsigned int amount);
+		void beRepaired(unsigned int amount);
+	private:
+		std::string name;
+		unsigned int hp;
+		unsigned int eng;
+		unsigned int dmg;
+};
 
 #endif
