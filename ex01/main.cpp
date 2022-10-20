@@ -1,15 +1,15 @@
-# include "ClapTrap.hpp"
+# include "ScavTrap.hpp"
 
 int main(void)
 {
-	ClapTrap fly_scrap("moon baboon");
+	ScavTrap fly_scrap("Don Bitzer");
 	{
 		std::cout <<" Test all constructors\n";
-		ClapTrap hanson;
+		ScavTrap hanson;
 		hanson = fly_scrap;
-		ClapTrap caplan = hanson;
-		ClapTrap cowen(caplan);
-		cowen.attack("love");
+		ScavTrap caplan = hanson; 
+		ScavTrap cowen(caplan);
+		cowen.attack("man");
 	}
 	std::cout<< "\n\t Test methods\n";
 	fly_scrap.attack("man");
@@ -20,5 +20,8 @@ int main(void)
 		fly_scrap.attack("Mankind");
 	std::cout<<"\033[0m";
 	fly_scrap.beRepaired(10);
+	fly_scrap.guardGate();
 	fly_scrap.takeDamage(1000);
+	fly_scrap.attack("man");
+	fly_scrap.guardGate();
 }

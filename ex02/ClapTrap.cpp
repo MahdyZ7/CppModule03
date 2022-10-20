@@ -1,12 +1,12 @@
 #include "ClapTrap.hpp"
 
-ClapTrap::ClapTrap(void): hp(10), eng(10), dmg(0)
+ClapTrap::ClapTrap(void): hp(100), eng(50), dmg(20)
 {
 	name = "WarpTart";
 	std::cout<< "Default constructor called\n";
 }
 
-ClapTrap::ClapTrap(std::string pname): hp(10), eng(10), dmg(0)
+ClapTrap::ClapTrap(std::string pname): hp(100), eng(50), dmg(20)
 {
 	name = pname;
 	std::cout<< "String constructor called\n";
@@ -93,3 +93,20 @@ void ClapTrap::beRepaired(unsigned int amount)
 	}
 }
 
+void ClapTrap::setEng(unsigned int num)
+{
+	eng = num;
+}
+
+void ClapTrap::setDmg(unsigned int num)
+{
+	dmg = num;
+}
+
+void ClapTrap::getInfo(std::string &str, int *hp_clone, int *eng_clone, int *dmg_clone)
+{
+	str = name;
+	*hp_clone = hp;
+	*eng_clone = eng;
+	*dmg_clone = dmg;
+}
