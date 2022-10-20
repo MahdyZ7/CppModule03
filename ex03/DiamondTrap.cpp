@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   DiamondTrap.cpp                                    :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: ayassin <ayassin@student.42abudhabi.ae>    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2022/10/20 11:24:32 by ayassin           #+#    #+#             */
+/*   Updated: 2022/10/20 11:24:33 by ayassin          ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "DiamondTrap.hpp"
 
 DiamondTrap::DiamondTrap(void): ClapTrap("WarpTart_clap_name"), ScavTrap()

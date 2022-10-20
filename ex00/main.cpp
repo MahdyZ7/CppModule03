@@ -1,10 +1,22 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   main.cpp                                           :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: ayassin <ayassin@student.42abudhabi.ae>    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2022/10/20 11:20:29 by ayassin           #+#    #+#             */
+/*   Updated: 2022/10/20 11:25:44 by ayassin          ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 # include "ClapTrap.hpp"
 
 int main(void)
 {
 	ClapTrap fly_scrap("moon baboon");
 	{
-		std::cout <<" Test all constructors\n";
+		std::cout <<"\t Test all constructors\n";
 		ClapTrap hanson;
 		hanson = fly_scrap;
 		ClapTrap caplan = hanson;

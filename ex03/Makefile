@@ -1,3 +1,15 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    Makefile                                           :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: ayassin <ayassin@student.42abudhabi.ae>    +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2022/10/20 11:24:48 by ayassin           #+#    #+#              #
+#    Updated: 2022/10/20 11:24:49 by ayassin          ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
 NAME = main
 
 SRC = ClapTrap.cpp ScavTrap.cpp FragTrap.cpp DiamondTrap.cpp main.cpp
